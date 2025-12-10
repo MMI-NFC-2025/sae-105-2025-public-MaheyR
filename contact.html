@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact - SavouFest 2025</title>
+  <link rel="stylesheet" href="src/css/style.css">
+</head>
+
+<body>
+
+  <header class="header">
+    <div class="container">
+      <a href="index.html">
+        <img src="assets/img/Titre.png" alt="SavouFest" class="logo">
+      </a>
+      
+      <nav>
+        <ul class="menu">
+          <li><a href="index.html">Accueil</a></li>
+          <li><a href="festival.html">Le festival</a></li>
+          <li><a href="programme.html">Programme</a></li>
+          <li><a href="artistes.html">Artistes</a></li>
+          <li><a href="scenes.html">Scènes</a></li>
+          <li><a href="infos.html">Infos</a></li>
+          <li><a href="contact.html" class="btn-contact nav__link--active">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="contact-intro">
+      <div class="container">
+        <h1>Contact</h1>
+        
+        <p>
+          Une question sur le festival ? Vous souhaitez devenir partenaire, obtenir des informations 
+          sur l'accessibilité ou nous contacter pour la presse ? N'hésitez pas à nous écrire, 
+          nous vous répondrons dans les plus brefs délais.
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--contact-form">
+      <div class="container">
+        <h2>Formulaire de contact</h2>
+        
+        <form class="contact-form" action="#" method="post">
+          <div class="contact-form__field">
+            <label for="name" class="contact-form__label">Nom</label>
+            <input type="text" id="name" name="name" class="contact-form__input" required>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="email" class="contact-form__label">Email</label>
+            <input type="email" id="email" name="email" class="contact-form__input" required>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="subject" class="contact-form__label">Sujet</label>
+            <select id="subject" name="subject" class="contact-form__input">
+              <option>Informations générales</option>
+              <option>Partenariats</option>
+              <option>Accessibilité</option>
+              <option>Presse</option>
+            </select>
+          </div>
+
+          <div class="contact-form__field">
+            <label for="message" class="contact-form__label">Message</label>
+            <textarea id="message" name="message" rows="4" class="contact-form__input" required></textarea>
+          </div>
+
+          <button type="submit" class="contact-form__submit">Envoyer</button>
+        </form>
+      </div>
+    </section>
+
+    <section class="section section--contact-info">
+      <div class="container">
+        <h2>Coordonnées</h2>
+        
+        <p>
+          <strong>Email :</strong> <a href="mailto:contact@savoufest.fr">contact@savoufest.fr</a><br>
+          <strong>Téléphone :</strong> 03 84 XX XX XX<br>
+          <strong>Adresse :</strong> Réserve naturelle de la Basse Vallée de la Savoureuse, 90400 Danjoutin
+        </p>
+      </div>
+    </section>
+
+    <section class="section section--contact-social">
+      <div class="container">
+        <h2>Réseaux sociaux</h2>
+        
+        <ul class="social-list">
+          <li class="social-list__item">
+            <a href="https://instagram.com/savoufest" class="social-list__link" target="_blank">
+              📷 Instagram
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://facebook.com/savoufest" class="social-list__link" target="_blank">
+              👍 Facebook
+            </a>
+          </li>
+          <li class="social-list__item">
+            <a href="https://tiktok.com/@savoufest" class="social-list__link" target="_blank">
+              🎵 TikTok
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container">
+      <p>© 2025 SavouFest – Réserve naturelle de la Basse Vallée de la Savoureuse</p>
+    </div>
+  </footer>
+
+  <script src="src/js/script.js"></script>
+
+</body>
+</html>
