@@ -1,0 +1,38 @@
+/* ========================================
+   SAVOUFEST - FESTIVAL CSS ARCHITECTURE
+   ======================================== */
+
+/* 1. VENDORS - Bibliothèques externes */
+@import url('vendors/normalize.css');
+
+/* 2. UTILS - Variables et helpers */
+@import url('utils/variables.css');
+
+/* 3. BASE - Reset et styles de base */
+@import url('base/main.css');
+@import url('base/media.css');
+
+/* 4. LAYOUT - Structure de page */
+@import url('layout/header.css');
+@import url('layout/page.css');
+@import url('layout/section.css');
+@import url('layout/footer.css');
+
+/* 5. COMPONENTS - Composants réutilisables */
+@import url('components/button.css');
+@import url('components/btn.css');
+@import url('components/menu.css');
+@import url('components/menu-btn.css');
+@import url('components/hero.css');
+@import url('components/hero-spotlight.css');
+@import url('components/vibes.css');
+@import url('components/planet.css');
+@import url('components/floating.css');
+@import url('components/card-artist.css');
+@import url('components/cart-concert.css');
+@import url('components/carousel.css');
+@import url('components/hero-festival.css');
+@import url('components/intro.css');
+@import url('components/history.css');
+@import url('components/team.css');
+@import url('components/charter.css');

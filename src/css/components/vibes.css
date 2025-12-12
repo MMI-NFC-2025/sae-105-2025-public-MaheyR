@@ -1,0 +1,110 @@
+.section--vibes {
+  background: var(--color-surface);
+  position: relative;
+  overflow: hidden;
+}
+
+.section--vibes::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 500px;
+  height: 500px;
+  background: radial-gradient(circle, rgba(255, 45, 85, 0.1) 0%, transparent 70%);
+  animation: float 20s ease-in-out infinite;
+}
+
+.section--vibes::after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.08) 0%, transparent 70%);
+  animation: float 25s ease-in-out infinite reverse;
+}
+
+@keyframes float {
+  0%, 100% { transform: translate(0, 0) rotate(0deg); }
+  50% { transform: translate(50px, 50px) rotate(10deg); }
+}
+
+.vibes {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: var(--space-xl);
+  margin-top: var(--space-2xl);
+  position: relative;
+  z-index: 1;
+}
+
+.vibes__item {
+  text-align: center;
+  padding: var(--space-xl);
+  background: var(--color-bg);
+  border-radius: var(--radius-xl);
+  transition: var(--transition-base);
+  border: 2px solid transparent;
+}
+
+.vibes__item:hover {
+  transform: translateY(-10px);
+  border-color: var(--color-accent-red);
+  box-shadow: 0 20px 60px rgba(255, 45, 85, 0.2);
+}
+
+.vibes__icon {
+  width: 120px;
+  height: 120px;
+  margin: 0 auto var(--space-md);
+  background: linear-gradient(135deg, var(--color-accent-red), var(--color-accent-pink));
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 10px 30px rgba(255, 45, 85, 0.3);
+  transition: var(--transition-base);
+}
+
+.vibes__item:hover .vibes__icon {
+  transform: scale(1.1) rotate(10deg);
+}
+
+.vibes__icon img {
+  width: 60%;
+  height: 60%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.vibes__title {
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  margin-bottom: var(--space-sm);
+  color: var(--color-primary);
+}
+
+.vibes__text {
+  color: var(--color-grey-medium);
+  line-height: 1.6;
+}
+
+@media (min-width: 768px) {
+  .vibes {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .vibes {
+    grid-template-columns: repeat(3, 1fr);
+    gap: var(--space-2xl);
+  }
+
+  .vibes__icon {
+    width: 140px;
+    height: 140px;
+  }
+}

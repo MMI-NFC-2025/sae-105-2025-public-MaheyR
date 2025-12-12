@@ -1,0 +1,58 @@
+.section--charter {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-grey-dark) 100%);
+  color: var(--color-surface);
+}
+
+.charter {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+  margin-top: var(--space-2xl);
+}
+
+.charter__item {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  padding: var(--space-xl);
+  border-radius: var(--radius-lg);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  transition: var(--transition-base);
+  text-align: center;
+}
+
+.charter__item:hover {
+  transform: translateY(-5px);
+  background: rgba(255, 255, 255, 0.08);
+  border-color: var(--color-accent-red);
+}
+
+.charter__icon {
+  font-size: 3rem;
+  margin-bottom: var(--space-md);
+  display: block;
+}
+
+.charter__title {
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  margin-bottom: var(--space-sm);
+  color: var(--color-surface);
+}
+
+.charter__text {
+  font-size: var(--font-size-md);
+  color: var(--color-surface);
+  opacity: 0.9;
+}
+
+@media (min-width: 768px) {
+  .charter {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .charter {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

@@ -1,0 +1,220 @@
+body {
+  padding-top: 80px;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: var(--z-fixed);
+  background: var(--color-surface);
+  border-bottom: 3px solid var(--color-accent-red);
+  transition: var(--transition-base);
+}
+
+.header--scrolled {
+  box-shadow: 0 4px 20px rgba(255, 45, 85, 0.3);
+}
+
+.header__container {
+  max-width: 1600px;
+  margin: 0 auto;
+  padding: var(--space-md) var(--space-lg);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  position: relative;
+}
+
+.header__logo-link {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  align-items: center;
+  z-index: var(--z-fixed);
+}
+
+.header__logo {
+  height: 50px;
+  width: auto;
+  transition: var(--transition-base);
+}
+
+.header__logo:hover {
+  transform: scale(1.08);
+}
+
+.header__nav {
+  display: none;
+}
+
+.header__menu {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xl);
+}
+
+.header__menu-link {
+  font-size: var(--font-size-sm);
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--color-primary);
+  padding: var(--space-xs) 0;
+  position: relative;
+}
+
+.header__menu-link::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background: var(--color-accent-red);
+  transition: var(--transition-base);
+}
+
+.header__menu-link:hover {
+  color: var(--color-primary);
+}
+
+.header__menu-link:hover::after {
+  width: 100%;
+}
+
+.header__menu-link--active {
+  color: var(--color-accent-red);
+}
+
+.header__menu-link--active::after {
+  width: 100%;
+}
+
+.header__cta {
+  background: var(--color-accent-red);
+  color: var(--color-surface);
+  padding: var(--space-sm) var(--space-lg);
+  border-radius: var(--radius-pill);
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-size: var(--font-size-sm);
+  box-shadow: 0 4px 16px rgba(255, 45, 85, 0.4);
+  transition: var(--transition-base);
+}
+
+.header__cta:hover {
+  background: var(--color-primary);
+  color: var(--color-accent-red);
+  transform: translateY(-2px);
+  box-shadow: 0 8px 24px rgba(255, 45, 85, 0.6);
+}
+
+.header__burger {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: var(--space-sm);
+  z-index: var(--z-modal);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.header__burger-line {
+  width: 32px;
+  height: 4px;
+  background: var(--color-primary);
+  border-radius: 3px;
+  transition: var(--transition-base);
+}
+
+.header__burger--active .header__burger-line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+  background: var(--color-accent-red);
+}
+
+.header__burger--active .header__burger-line:nth-child(2) {
+  opacity: 0;
+}
+
+.header__burger--active .header__burger-line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+  background: var(--color-accent-red);
+}
+
+.header__decorations {
+  position: absolute;
+  display: flex;
+  gap: var(--space-sm);
+  right: var(--space-lg);
+  align-items: center;
+  pointer-events: none;
+}
+
+.header__deco-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+  opacity: 0.8;
+  animation: float 6s ease-in-out infinite;
+}
+
+.header__deco-icon:nth-child(1) {
+  animation-delay: 0s;
+}
+
+.header__deco-icon:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.header__deco-icon:nth-child(3) {
+  animation-delay: 2s;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-8px); }
+}
+
+@media (min-width: 768px) {
+  body {
+    padding-top: 90px;
+  }
+
+  .header__container {
+    padding: var(--space-lg) var(--space-xl);
+  }
+
+  .header__logo {
+    height: 60px;
+  }
+
+  .header__nav {
+    display: flex;
+    flex: 1;
+    justify-content: flex-end;
+  }
+
+  .header__burger {
+    display: none;
+  }
+  
+  .header__decorations {
+    display: flex;
+  }
+  
+  .header__deco-icon {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  .header__decorations {
+    display: none;
+  }
+}

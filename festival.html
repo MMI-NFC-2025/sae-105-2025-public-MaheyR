@@ -1,123 +1,264 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Le Festival - SavouFest 2025</title>
+  <meta name="description" content="Découvrez le SavouFest, festival éco-responsable de musiques actuelles dans la Réserve naturelle de la Basse Vallée de la Savoureuse.">
   <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/script.js" defer></script>
 </head>
-
 <body>
 
+  <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <a href="index.html">
-        <img src="assets/img/Titre.png" alt="SavouFest" class="logo">
-      </a>
+    <div class="header__container">
+      <button class="header__burger" aria-label="Menu" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
       
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="festival.html" class="nav__link--active">Le festival</a></li>
-          <li><a href="programme.html">Programme</a></li>
-          <li><a href="artistes.html">Artistes</a></li>
-          <li><a href="infos.html">Infos</a></li>
-          <li><a href="contact.html" class="btn-contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="index.html" class="header__logo-link">
+        <img src="assets/img/Titre.png" alt="SavouFest" class="header__logo">
+      </a>
     </div>
+    
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Accueil</a>
+        </li>
+        <li class="menu__item">
+          <a href="festival.html" class="menu__link menu__link--active">Le festival</a>
+        </li>
+        <li class="menu__item">
+          <a href="programme.html" class="menu__link">Programme</a>
+        </li>
+        <li class="menu__item">
+          <a href="artistes.html" class="menu__link">Artistes</a>
+        </li>
+        <li class="menu__item">
+          <a href="scenes.html" class="menu__link">Scènes</a>
+        </li>
+        <li class="menu__item">
+          <a href="infos.html" class="menu__link">Infos</a>
+        </li>
+        <li class="menu__item">
+          <a href="contact.html" class="menu__link menu__link--cta">Billetterie</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
   <main>
 
- 
-    <section class="festival-intro">
-      <div class="container">
-        <h1>Le SavouFest</h1>
-        
-        <p>
-          Le SavouFest est un festival de musiques actuelles éco-responsable qui réunit chaque année 
-          des milliers de festivaliers autour d'une programmation éclectique et d'une ambiance conviviale. 
-          Pensé pour un public jeune adulte en quête d'authenticité et de sens, notre festival cultive 
-          l'inclusivité et le respect de l'environnement.
-        </p>
-        
-        <p>
-          Installé au cœur de la Réserve naturelle de la Basse Vallée de la Savoureuse, SavouFest 
-          s'engage à préserver ce cadre exceptionnel. Notre scénographie et notre organisation sont 
-          pensées à faible impact : structures légères, circuits courts, valorisation des ressources 
-          locales. Ici, on fait la fête sans laisser de trace.
-        </p>
+    <!-- HERO FESTIVAL -->
+    <section class="hero hero--festival">
+      <div class="hero__container">
+        <p class="hero__eyebrow">Depuis 2025</p>
+        <h1 class="hero__title">Le SavouFest</h1>
+        <p class="hero__subtitle">Festival de musiques actuelles éco-responsable</p>
       </div>
     </section>
 
-    <section class="festival-history">
-      <div class="container">
-        <h2>Historique</h2>
-        
-        <p>
-          Le SavouFest est né d'un projet étudiant en BUT MMi en 2025. L'idée ? 
-          Prouver qu'on peut organiser un festival qui déchire tout en respectant la planète. 
-          Pas de discours moralisateur, juste l'envie de montrer qu'une fête durable, 
-          c'est possible et même mieux. Notre devise : "danser au rythme de la planète". 
-          Cette première édition est un test grandeur nature pour poser les bases d'un événement 
-          qui deviendra incontournable dans la région.
-        </p>
+    <!-- INTRO -->
+    <section class="section section--intro">
+      <div class="section__container">
+        <div class="intro">
+          <div class="intro__content">
+            <h2 class="intro__title">Un festival qui a du sens</h2>
+            <p class="intro__text">
+              Le SavouFest est un festival de musiques actuelles éco-responsable qui réunit chaque année 
+              des milliers de festivaliers autour d'une programmation éclectique et d'une ambiance conviviale. 
+              Pensé pour un public jeune adulte en quête d'authenticité et de sens, notre festival cultive 
+              l'inclusivité et le respect de l'environnement.
+            </p>
+            <p class="intro__text">
+              Installé au cœur de la <strong>Réserve naturelle de la Basse Vallée de la Savoureuse</strong>, 
+              SavouFest s'engage à préserver ce cadre exceptionnel. Notre scénographie et notre organisation sont 
+              pensées à faible impact : structures légères, circuits courts, valorisation des ressources 
+              locales. Ici, on fait la fête sans laisser de trace.
+            </p>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="festival-team">
-      <div class="container">
-        <h2>L'équipe</h2>
-        
-        <ul class="team">
-          <li class="team__member">
+    <!-- HISTORIQUE -->
+    <section class="section section--history">
+      <div class="section__container">
+        <div class="history">
+          <div class="history__icon">
+            <img src="assets/img/vinyle.png" alt="Vinyle">
+          </div>
+          <div class="history__content">
+            <p class="section__subtitle">Notre histoire</p>
+            <h2 class="section__title">Historique</h2>
+            <p class="history__text">
+              Le SavouFest est né d'un projet étudiant en BUT MMi en 2025. L'idée ? 
+              Prouver qu'on peut organiser un festival qui déchire tout en respectant la planète. 
+              Pas de discours moralisateur, juste l'envie de montrer qu'une fête durable, 
+              c'est possible et même mieux.
+            </p>
+            <p class="history__text">
+              Notre devise : <strong>"Danser au rythme de la planète"</strong>. 
+              Cette première édition est un test grandeur nature pour poser les bases d'un événement 
+              qui deviendra incontournable dans la région.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ÉQUIPE -->
+    <section class="section section--team">
+      <div class="section__container">
+        <div class="section__header">
+          <p class="section__subtitle">Ils font vivre le festival</p>
+          <h2 class="section__title">L'équipe</h2>
+        </div>
+
+        <div class="team">
+          <div class="team__member">
+            <div class="team__avatar">
+              <img src="assets/img/Couronne.png" alt="">
+            </div>
             <h3 class="team__name">Clara V.</h3>
             <p class="team__role">Direction</p>
-          </li>
+          </div>
 
-          <li class="team__member">
+          <div class="team__member">
+            <div class="team__avatar">
+              <img src="assets/img/mégaphone.png" alt="">
+            </div>
             <h3 class="team__name">Léo M.</h3>
             <p class="team__role">Programmation</p>
-          </li>
+          </div>
 
-          <li class="team__member">
+          <div class="team__member">
+            <div class="team__avatar">
+              <img src="assets/img/Terre.png" alt="">
+            </div>
             <h3 class="team__name">Nina R.</h3>
             <p class="team__role">Éco-responsabilité</p>
-          </li>
+          </div>
 
-          <li class="team__member">
+          <div class="team__member">
+            <div class="team__avatar">
+              <img src="assets/img/éclair.png" alt="">
+            </div>
             <h3 class="team__name">Maxime T.</h3>
             <p class="team__role">Communication</p>
-          </li>
-        </ul>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section class="festival-charter">
-      <div class="container">
-        <h2>Charte & valeurs</h2>
-        
-        <ul class="charter">
-          <li class="charter__item">🗑️ Réduction maximale des déchets</li>
-          <li class="charter__item">⚡ Utilisation d'énergie verte uniquement</li>
-          <li class="charter__item">♿ Accessibilité universelle garantie</li>
-          <li class="charter__item">🤝 Promotion d'une fête inclusive</li>
-          <li class="charter__item">🌿 Protection stricte de la réserve naturelle</li>
-        </ul>
+    <!-- CHARTE & VALEURS -->
+    <section class="section section--charter">
+      <div class="section__container">
+        <div class="section__header">
+          <p class="section__subtitle">Nos engagements</p>
+          <h2 class="section__title">Charte & valeurs</h2>
+        </div>
+
+        <div class="charter">
+          <div class="charter__item">
+            <div class="charter__icon">🗑️</div>
+            <h3 class="charter__title">Zéro déchet</h3>
+            <p class="charter__text">Réduction maximale des déchets</p>
+          </div>
+
+          <div class="charter__item">
+            <div class="charter__icon">⚡</div>
+            <h3 class="charter__title">Énergie verte</h3>
+            <p class="charter__text">Utilisation d'énergie 100% renouvelable</p>
+          </div>
+
+          <div class="charter__item">
+            <div class="charter__icon">♿</div>
+            <h3 class="charter__title">Accessibilité</h3>
+            <p class="charter__text">Accessibilité universelle garantie</p>
+          </div>
+
+          <div class="charter__item">
+            <div class="charter__icon">🤝</div>
+            <h3 class="charter__title">Inclusivité</h3>
+            <p class="charter__text">Promotion d'une fête inclusive</p>
+          </div>
+
+          <div class="charter__item">
+            <div class="charter__icon">🌿</div>
+            <h3 class="charter__title">Nature</h3>
+            <p class="charter__text">Protection stricte de la réserve naturelle</p>
+          </div>
+        </div>
       </div>
     </section>
 
   </main>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 SavouFest – Réserve naturelle de la Basse Vallée de la Savoureuse</p>
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h3 class="footer__title">SavouFest</h3>
+          <p class="footer__text">
+            Le festival qui fait vibrer ! <br>
+            12-13 Juin 2025
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Accueil</a></li>
+            <li><a href="festival.html" class="footer__link">Le festival</a></li>
+            <li><a href="programme.html" class="footer__link">Programme</a></li>
+            <li><a href="artistes.html" class="footer__link">Artistes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Infos pratiques</h3>
+          <ul class="footer__list">
+            <li><a href="scenes.html" class="footer__link">Scènes</a></li>
+            <li><a href="infos.html" class="footer__link">Infos & Accès</a></li>
+            <li><a href="contact.html" class="footer__link">Billetterie</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Contact</h3>
+          <p class="footer__text">
+            📧 contact@savoufest.fr<br>
+            📞 01 23 45 67 89<br>
+            📍 Réserve naturelle de la Basse Vallée de la Savoureuse
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2025 SavouFest. Tous droits réservés. | 
+          <a href="#" class="footer__link">Mentions légales</a> | 
+          <a href="#" class="footer__link">CGV</a>
+        </p>
+        <p class="footer__credits">
+          Design & Code avec ❤️ pour SAÉ 105
+        </p>
+      </div>
     </div>
   </footer>
-
-  <script src="src/js/script.js"></script>
 
 </body>
 </html>

@@ -1,0 +1,119 @@
+/* Page artiste - Détail */
+
+.artist-header {
+  background: linear-gradient(135deg, var(--color-primary), #222);
+  padding: var(--space-3xl) 0;
+  text-align: center;
+  color: var(--color-surface);
+}
+
+.artist-header h1 {
+  font-size: clamp(2.5rem, 7vw, var(--font-size-5xl));
+  font-weight: 900;
+  margin-bottom: var(--space-lg);
+}
+
+.artist-header__image {
+  width: 200px;
+  height: 200px;
+  margin: 0 auto var(--space-xl);
+  border-radius: 50%;
+  overflow: hidden;
+  border: 8px solid var(--color-accent-red);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--color-accent-red), var(--color-accent-pink));
+  padding: var(--space-xl);
+  box-shadow: 0 0 0 16px rgba(255, 45, 85, 0.15);
+}
+
+.artist-header__image img {
+  width: 80%;
+  height: 80%;
+  object-fit: contain;
+  filter: brightness(0) invert(1);
+}
+
+.artist-header__meta {
+  font-size: var(--font-size-lg);
+  color: var(--color-accent-red);
+  margin-top: var(--space-md);
+}
+
+.artist-about {
+  padding: var(--space-3xl) 0;
+  background: var(--color-bg);
+}
+
+.artist-about h2 {
+  font-size: clamp(2rem, 5vw, var(--font-size-3xl));
+  font-weight: 900;
+  margin-bottom: var(--space-xl);
+  color: var(--color-primary);
+}
+
+.artist-about p {
+  font-size: var(--font-size-lg);
+  line-height: 1.7;
+  color: var(--color-grey-medium);
+  margin-bottom: var(--space-lg);
+}
+
+.artist-gallery {
+  padding: var(--space-3xl) 0;
+  background: var(--color-surface);
+}
+
+.artist-gallery h2 {
+  font-size: clamp(1.75rem, 5vw, var(--font-size-3xl));
+  font-weight: 900;
+  margin-bottom: var(--space-2xl);
+  color: var(--color-primary);
+}
+
+.artist-gallery__grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: var(--space-lg);
+}
+
+.artist-gallery__item {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-border);
+  transition: border-color 0.3s ease;
+}
+
+.artist-gallery__item:hover {
+  border-color: var(--color-accent-red);
+}
+
+.artist-back {
+  padding: var(--space-2xl) 0;
+  text-align: center;
+  background: var(--color-bg);
+}
+
+.artist-back .btn {
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .artist-gallery__grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  .artist-gallery__grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .artist-header__image {
+    width: 250px;
+    height: 250px;
+  }
+}

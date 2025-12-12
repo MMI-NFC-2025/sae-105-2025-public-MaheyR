@@ -1,0 +1,71 @@
+.hero--festival {
+  background: linear-gradient(135deg, var(--color-primary) 0%, var(--color-grey-dark) 100%);
+  color: var(--color-surface);
+  padding: calc(60px + var(--space-3xl)) var(--space-md) var(--space-3xl);
+  min-height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.hero--festival::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -10%;
+  width: 600px;
+  height: 600px;
+  background: radial-gradient(circle, rgba(255, 45, 85, 0.2) 0%, transparent 70%);
+  animation: float 20s ease-in-out infinite;
+}
+
+.hero--festival::after {
+  content: '';
+  position: absolute;
+  bottom: -50%;
+  right: -10%;
+  width: 700px;
+  height: 700px;
+  background: radial-gradient(circle, rgba(0, 212, 255, 0.15) 0%, transparent 70%);
+  animation: float 25s ease-in-out infinite reverse;
+}
+
+.hero--festival .hero__container {
+  max-width: 900px;
+  position: relative;
+  z-index: 1;
+}
+
+.hero--festival .hero__eyebrow {
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: 0.15em;
+  color: var(--color-accent-red);
+  margin-bottom: var(--space-md);
+}
+
+.hero--festival .hero__title {
+  font-size: clamp(2.5rem, 8vw, var(--font-size-4xl));
+  font-weight: 900;
+  line-height: 1.1;
+  margin-bottom: var(--space-md);
+  color: var(--color-surface);
+}
+
+.hero--festival .hero__subtitle {
+  font-size: clamp(1.125rem, 3vw, var(--font-size-xl));
+  font-weight: 400;
+  opacity: 0.9;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .hero--festival {
+    min-height: 70vh;
+  }
+}

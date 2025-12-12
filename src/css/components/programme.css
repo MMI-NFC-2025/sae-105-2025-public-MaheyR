@@ -1,0 +1,140 @@
+/* Programme page styles */
+
+.programme-intro {
+  background: var(--color-surface);
+  padding: var(--space-2xl) 0;
+  text-align: center;
+}
+
+.programme-intro h1 {
+  font-size: clamp(2rem, 6vw, var(--font-size-4xl));
+  font-weight: 900;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary);
+}
+
+.programme-intro p {
+  font-size: var(--font-size-lg);
+  color: var(--color-grey-medium);
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.7;
+}
+
+.day-nav {
+  background: var(--color-bg);
+  padding: var(--space-lg) 0;
+  border-bottom: 2px solid var(--color-border);
+}
+
+.day-tabs {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-md);
+  flex-wrap: wrap;
+}
+
+.day-tab {
+  padding: var(--space-md) var(--space-xl);
+  background: var(--color-surface);
+  border: 2px solid var(--color-border);
+  border-radius: var(--radius-md);
+  font-weight: 700;
+  font-size: var(--font-size-md);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: var(--color-grey-medium);
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.day-tab:hover,
+.day-tab.active {
+  background: var(--color-accent-red);
+  border-color: var(--color-accent-red);
+  color: var(--color-surface);
+}
+
+.programme-day {
+  padding: var(--space-3xl) 0;
+}
+
+.programme-day h2 {
+  font-size: clamp(1.75rem, 5vw, var(--font-size-3xl));
+  font-weight: 900;
+  margin-bottom: var(--space-2xl);
+  color: var(--color-primary);
+  text-align: center;
+}
+
+.program-list {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.program-list__item {
+  background: var(--color-surface);
+  padding: var(--space-xl);
+  margin-bottom: var(--space-md);
+  border-radius: var(--radius-lg);
+  border: 2px solid var(--color-border);
+  transition: all 0.3s ease;
+}
+
+.program-list__item:hover {
+  transform: translateY(-3px);
+  border-color: var(--color-accent-red);
+}
+
+.program-list__artist {
+  font-size: var(--font-size-xl);
+  font-weight: 900;
+  color: var(--color-primary);
+  margin-bottom: var(--space-xs);
+  text-decoration: none;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.program-list__artist:hover {
+  color: var(--color-accent-red);
+}
+
+.program-list__meta {
+  font-size: var(--font-size-md);
+  color: var(--color-grey-medium);
+  margin: 0;
+}
+
+.programme-download {
+  background: var(--color-bg);
+  padding: var(--space-3xl) 0;
+  text-align: center;
+}
+
+.programme-download h2 {
+  font-size: clamp(1.75rem, 5vw, var(--font-size-3xl));
+  font-weight: 900;
+  margin-bottom: var(--space-md);
+  color: var(--color-primary);
+}
+
+.programme-download p {
+  font-size: var(--font-size-lg);
+  color: var(--color-grey-medium);
+  max-width: 700px;
+  margin: 0 auto var(--space-xl);
+  line-height: 1.7;
+}
+
+@media (min-width: 768px) {
+  .day-tabs {
+    gap: var(--space-lg);
+  }
+  
+  .day-tab {
+    padding: var(--space-lg) var(--space-2xl);
+    font-size: var(--font-size-lg);
+  }
+}

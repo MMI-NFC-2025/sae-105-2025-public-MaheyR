@@ -6,32 +6,62 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Programme - SavouFest 2025</title>
   <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/script.js" defer></script>
 </head>
 
 <body>
 
   <header class="header">
-    <div class="container">
-      <a href="index.html">
-        <img src="assets/img/Titre.png" alt="SavouFest" class="logo">
+    <div class="header__container">
+      <button class="header__burger" aria-label="Menu" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
+      
+      <a href="index.html" class="header__logo-link">
+        <img src="assets/img/Titre.png" alt="SavouFest" class="header__logo">
       </a>
       
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="festival.html">Le festival</a></li>
-          <li><a href="programme.html" class="nav__link--active">Programme</a></li>
-          <li><a href="artistes.html">Artistes</a></li>
-          <li><a href="infos.html">Infos</a></li>
-          <li><a href="contact.html" class="btn-contact">Contact</a></li>
-        </ul>
-      </nav>
+      <div class="header__decorations">
+        <img src="assets/img/éclair.png" alt="" class="header__deco-icon">
+        <img src="assets/img/Couronne.png" alt="" class="header__deco-icon">
+        <img src="assets/img/étoiles.png" alt="" class="header__deco-icon">
+      </div>
     </div>
+    
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link">Accueil</a>
+        </li>
+        <li class="menu__item">
+          <a href="festival.html" class="menu__link">Le festival</a>
+        </li>
+        <li class="menu__item">
+          <a href="programme.html" class="menu__link menu__link--active">Programme</a>
+        </li>
+        <li class="menu__item">
+          <a href="artistes.html" class="menu__link">Artistes</a>
+        </li>
+        <li class="menu__item">
+          <a href="scenes.html" class="menu__link">Scènes</a>
+        </li>
+        <li class="menu__item">
+          <a href="infos.html" class="menu__link">Infos</a>
+        </li>
+        <li class="menu__item">
+          <a href="contact.html" class="menu__link menu__link--cta">Billetterie</a>
+        </li>
+      </ul>
+    </nav>
   </header>
+  
+  <div class="menu-overlay"></div>
 
-  <main>
+  <main class="page">
 
-    <section class="programme-intro">
+    <section class="programme-intro section">
       <div class="container">
         <h1>Programme</h1>
         
@@ -43,62 +73,144 @@
       </div>
     </section>
 
-    <section class="day-nav">
+    <section class="day-nav section">
       <div class="container">
-        <div class="day-tabs">
-          <a href="#jour1" class="day-tab active">Jeudi 12 juin</a>
-          <a href="#jour2" class="day-tab">Vendredi 13 juin</a>
-        </div>
+        <ul class="day-tabs__list">
+          <li class="day-tabs__item">
+            <a href="#jour1" class="day-tabs__link day-tabs__link--active">Jeudi 12 juin</a>
+          </li>
+          <li class="day-tabs__item">
+            <a href="#jour2" class="day-tabs__link">Vendredi 13 juin</a>
+          </li>
+        </ul>
       </div>
     </section>
 
-    <section class="programme-day" id="jour1">
+    <section class="programme-list section" id="jour1">
       <div class="container">
         <h2>Jeudi 12 juin</h2>
         
-        <ul class="program-list">
-          <li class="program-list__item">
-            <a href="artiste.html" class="program-list__artist">Eco Beats</a>
-            <p class="program-list__meta">18h • Scène Nature • Électro / Chill</p>
+        <ul class="programme-items">
+          <li class="programme-item">
+            <div class="programme-item__time">18h00</div>
+            <h3 class="programme-item__name">Eco Beats</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Nature</span>
+              <span class="programme-item__genre">Électro / Chill</span>
+            </div>
           </li>
 
-          <li class="program-list__item">
-            <a href="artiste.html" class="program-list__artist">Solar Noise</a>
-            <p class="program-list__meta">20h • Scène Éclair • Électro / Bass</p>
+          <li class="programme-item">
+            <div class="programme-item__time">19h30</div>
+            <h3 class="programme-item__name">Forest Sounds</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Conscience</span>
+              <span class="programme-item__genre">Folk / Acoustique</span>
+            </div>
           </li>
 
-          <li class="program-list__item">
-            <a href="artiste.html" class="program-list__artist">The Green Waves</a>
-            <p class="program-list__meta">22h • Scène Conscience • Indie / Pop</p>
+          <li class="programme-item">
+            <div class="programme-item__time">20h00</div>
+            <h3 class="programme-item__name">Solar Noise</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Éclair</span>
+              <span class="programme-item__genre">Électro / Bass</span>
+            </div>
+          </li>
+
+          <li class="programme-item">
+            <div class="programme-item__time">21h30</div>
+            <h3 class="programme-item__name">Urban Nature</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Nature</span>
+              <span class="programme-item__genre">Rap / Hip-Hop</span>
+            </div>
+          </li>
+
+          <li class="programme-item">
+            <div class="programme-item__time">22h00</div>
+            <h3 class="programme-item__name">The Green Waves</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Conscience</span>
+              <span class="programme-item__genre">Indie / Pop</span>
+            </div>
+          </li>
+
+          <li class="programme-item">
+            <div class="programme-item__time">23h00</div>
+            <h3 class="programme-item__name">Electric Forest</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Éclair</span>
+              <span class="programme-item__genre">Techno / House</span>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="programme-day" id="jour2">
+    <section class="programme-list section" id="jour2">
       <div class="container">
         <h2>Vendredi 13 juin</h2>
         
-        <ul class="program-list">
-          <li class="program-list__item">
-            <a href="artiste.html" class="program-list__artist">Earth Groove</a>
-            <p class="program-list__meta">18h • Scène Nature • Funk / Groove</p>
+        <ul class="programme-items">
+          <li class="programme-item">
+            <div class="programme-item__time">18h00</div>
+            <h3 class="programme-item__name">Earth Groove</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Nature</span>
+              <span class="programme-item__genre">Funk / Groove</span>
+            </div>
           </li>
 
-          <li class="program-list__item">
-            <a href="artiste.html" class="program-list__artist">Wild Sunset</a>
-            <p class="program-list__meta">20h • Scène Éclair • Rock / Pop</p>
+          <li class="programme-item">
+            <div class="programme-item__time">19h30</div>
+            <h3 class="programme-item__name">Green Symphony</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Conscience</span>
+              <span class="programme-item__genre">Indie / Electro</span>
+            </div>
           </li>
 
-          <li class="program-list__item">
-            <a href="artiste.html" class="program-list__artist">Planet Vibes</a>
-            <p class="program-list__meta">22h • Scène Conscience • Rap / Électro</p>
+          <li class="programme-item">
+            <div class="programme-item__time">20h00</div>
+            <h3 class="programme-item__name">Wild Sunset</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Éclair</span>
+              <span class="programme-item__genre">Rock / Pop</span>
+            </div>
+          </li>
+
+          <li class="programme-item">
+            <div class="programme-item__time">21h30</div>
+            <h3 class="programme-item__name">Cosmic Beats</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Nature</span>
+              <span class="programme-item__genre">Électro / Ambient</span>
+            </div>
+          </li>
+
+          <li class="programme-item">
+            <div class="programme-item__time">22h00</div>
+            <h3 class="programme-item__name">Planet Vibes</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Conscience</span>
+              <span class="programme-item__genre">Rap / Électro</span>
+            </div>
+          </li>
+
+          <li class="programme-item">
+            <div class="programme-item__time">23h30</div>
+            <h3 class="programme-item__name">Midnight Garden</h3>
+            <div class="programme-item__meta">
+              <span class="programme-item__stage">Scène Éclair</span>
+              <span class="programme-item__genre">House / Techno</span>
+            </div>
           </li>
         </ul>
       </div>
     </section>
 
-    <section class="programme-download">
+    <section class="programme-download section">
       <div class="container">
         <h2>Programme complet</h2>
         
@@ -106,19 +218,36 @@
           Téléchargez le programme complet en PDF pour l'avoir toujours avec vous.
         </p>
         
-        <a href="#" class="button button--secondary">Télécharger le PDF</a>
+        <a href="#" class="btn btn--primary">Télécharger le PDF</a>
       </div>
     </section>
 
   </main>
 
-  <footer>
+  <footer class="footer">
     <div class="container">
-      <p>© 2025 SavouFest – Réserve naturelle de la Basse Vallée de la Savoureuse</p>
+      <div class="footer__content">
+        <div class="footer__logo">
+          <img src="assets/img/Titre.png" alt="SavouFest" class="footer__logo-img">
+        </div>
+        
+        <div class="footer__info">
+          <p>12-13 Juin 2025</p>
+          <p>Réserve naturelle de la Basse Vallée de la Savoureuse</p>
+        </div>
+        
+        <div class="footer__social">
+          <a href="#" class="footer__social-link">Instagram</a>
+          <a href="#" class="footer__social-link">Facebook</a>
+          <a href="#" class="footer__social-link">Twitter</a>
+        </div>
+      </div>
+      
+      <div class="footer__bottom">
+        <p>© 2025 SavouFest - Tous droits réservés</p>
+      </div>
     </div>
   </footer>
-
-  <script src="src/js/script.js"></script>
 
 </body>
 </html>

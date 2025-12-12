@@ -1,219 +1,315 @@
 <!DOCTYPE html>
 <html lang="fr">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>SavouFest 2025</title>
+  <title>SavouFest 2025 - Festival de musique | 12-13 Juin</title>
+  <meta name="description" content="SavouFest 2025 - Le festival qui fait vibrer ! 12-13 Juin. Découvrez 20 artistes exceptionnels.">
   <link rel="stylesheet" href="src/css/style.css">
+  <script src="src/js/script.js" defer></script>
 </head>
-
 <body>
 
+  <!-- HEADER -->
   <header class="header">
-    <div class="container">
-      <img src="assets/img/Titre.png" alt="SavouFest" class="logo">
+    <div class="header__container">
+      <button class="header__burger" aria-label="Menu" aria-expanded="false">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+      </button>
       
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="festival.html">Le festival</a></li>
-          <li><a href="programme.html">Programme</a></li>
-          <li><a href="artistes.html">Artistes</a></li>
-          <li><a href="infos.html">Infos</a></li>
-          <li><a href="contact.html" class="btn-contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="index.html" class="header__logo-link">
+        <img src="assets/img/Titre.png" alt="SavouFest" class="header__logo">
+      </a>
+      
+      <div class="header__decorations">
+        <img src="assets/img/éclair.png" alt="" class="header__deco-icon">
+        <img src="assets/img/Couronne.png" alt="" class="header__deco-icon">
+        <img src="assets/img/étoiles.png" alt="" class="header__deco-icon">
+      </div>
     </div>
+    
+    <nav class="menu">
+      <ul class="menu__list">
+        <li class="menu__item">
+          <a href="index.html" class="menu__link menu__link--active">Accueil</a>
+        </li>
+        <li class="menu__item">
+          <a href="festival.html" class="menu__link">Le festival</a>
+        </li>
+        <li class="menu__item">
+          <a href="programme.html" class="menu__link">Programme</a>
+        </li>
+        <li class="menu__item">
+          <a href="artistes.html" class="menu__link">Artistes</a>
+        </li>
+        <li class="menu__item">
+          <a href="scenes.html" class="menu__link">Scènes</a>
+        </li>
+        <li class="menu__item">
+          <a href="infos.html" class="menu__link">Infos</a>
+        </li>
+        <li class="menu__item">
+          <a href="contact.html" class="menu__link menu__link--cta">Billetterie</a>
+        </li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-
-    <section class="hero">
-      <div class="hero-content">
-        <img src="assets/img/Bouche.png" alt="" class="decor decor-1">
-        <img src="assets/img/Couronne.png" alt="" class="decor decor-2">
-        <img src="assets/img/éclair.png" alt="" class="decor decor-3">
-        
-        <h1>
-          SavouFest <span>2025</span>
-        </h1>
-        
-        <p class="dates">12 & 13 juin 2025</p>
-        <p class="lieu">Réserve naturelle de la Basse Vallée de la Savoureuse</p>
-        
-        <p class="baseline">La fête pour tous, même l'environnement.</p>
-        
-        <div class="actions">
-          <button class="btn-primary" disabled>Billetterie bientôt disponible</button>
-          <a href="programme.html" class="btn-secondary">Voir le programme</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="countdown">
-      <h2>Plus que</h2>
-      <div class="timer">
-        <div>
-          <span class="number">0</span>
-          <span>Jours</span>
-        </div>
-        <div>
-          <span class="number">0</span>
-          <span>Heures</span>
-        </div>
-        <div>
-          <span class="number">0</span>
-          <span>Minutes</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="presentation">
-      <div class="container">
-        <div class="content-image">
-          <div>
-            <h2>Un festival qui fait la différence</h2>
-            <p>SavouFest c'est 2 jours de concerts dans un cadre naturel exceptionnel. Une expérience musicale unique qui respecte l'environnement.</p>
-            <a href="festival.html">En savoir plus →</a>
+  <!-- HERO SPOTLIGHT -->
+  <section class="hero hero--spotlight">
+    <div class="hero__container">
+      <p class="hero__eyebrow">Festival 2025 : 12-13 Juin</p>
+      
+      <h1 class="hero__title">
+        SavouFest Spotlight: 20 artistes à suivre en 2025!
+      </h1>
+      
+      <div class="hero__visual">
+        <div class="hero__collage">
+          <div class="hero__collage-center">
+            <img src="assets/img/Titre.png" alt="SavouFest" class="hero__collage-logo">
           </div>
+          
+          <a href="artistes.html" class="hero__more-btn">Plus</a>
+        </div>
+      </div>
+      
+      <p class="hero__intro">
+        Notre équipe de programmation vous présente 20 artistes en pleine ascension 
+        qui marqueront l'année 2025! Une sélection qui met en lumière les différentes 
+        tendances émergentes, tous styles confondus.
+      </p>
+    </div>
+  </section>
+
+  <!-- SECTION ICONES / VIBES -->
+  <section class="section section--vibes">
+    <div class="section__container">
+      <div class="section__header">
+        <p class="section__subtitle">Les vibes du festival</p>
+        <h2 class="section__title">Une expérience unique</h2>
+      </div>
+
+      <div class="carousel">
+        <button class="carousel__btn carousel__btn--prev" aria-label="Précédent">
+          <span>‹</span>
+        </button>
+
+        <div class="carousel__track-container">
+          <div class="carousel__track">
+            <!-- Slide 1 -->
+            <div class="carousel__slide carousel__slide--active">
+              <div class="carousel__icon">
+                <img src="assets/img/Bouche.png" alt="Bouche">
+              </div>
+              <h3 class="carousel__title">Voix puissantes</h3>
+              <p class="carousel__text">Des artistes aux voix exceptionnelles qui vous feront vibrer</p>
+            </div>
+
+            <!-- Slide 2 -->
+            <div class="carousel__slide">
+              <div class="carousel__icon">
+                <img src="assets/img/Couronne.png" alt="Couronne">
+              </div>
+              <h3 class="carousel__title">Têtes d'affiche</h3>
+              <p class="carousel__text">Les plus grands noms de la scène musicale actuelle</p>
+            </div>
+
+            <!-- Slide 3 -->
+            <div class="carousel__slide">
+              <div class="carousel__icon">
+                <img src="assets/img/éclair.png" alt="Éclair">
+              </div>
+              <h3 class="carousel__title">Énergie électrique</h3>
+              <p class="carousel__text">Une ambiance explosive du lever au coucher du soleil</p>
+            </div>
+
+            <!-- Slide 4 -->
+            <div class="carousel__slide">
+              <div class="carousel__icon">
+                <img src="assets/img/mégaphone.png" alt="Mégaphone">
+              </div>
+              <h3 class="carousel__title">Faites-vous entendre</h3>
+              <p class="carousel__text">Participez, chantez, dansez et vivez l'instant</p>
+            </div>
+
+            <!-- Slide 5 -->
+            <div class="carousel__slide">
+              <div class="carousel__icon">
+                <img src="assets/img/Spider-sens.png" alt="Spider sens">
+              </div>
+              <h3 class="carousel__title">Sensations fortes</h3>
+              <p class="carousel__text">Des émotions intenses à chaque performance</p>
+            </div>
+
+            <!-- Slide 6 -->
+            <div class="carousel__slide">
+              <div class="carousel__icon">
+                <img src="assets/img/vinyle.png" alt="Vinyle">
+              </div>
+              <h3 class="carousel__title">Authenticité</h3>
+              <p class="carousel__text">La vraie musique live sans artifices</p>
+            </div>
+          </div>
+        </div>
+
+        <button class="carousel__btn carousel__btn--next" aria-label="Suivant">
+          <span>›</span>
+        </button>
+
+        <!-- Indicateurs -->
+        <div class="carousel__indicators">
+          <button class="carousel__indicator carousel__indicator--active" aria-label="Slide 1"></button>
+          <button class="carousel__indicator" aria-label="Slide 2"></button>
+          <button class="carousel__indicator" aria-label="Slide 3"></button>
+          <button class="carousel__indicator" aria-label="Slide 4"></button>
+          <button class="carousel__indicator" aria-label="Slide 5"></button>
+          <button class="carousel__indicator" aria-label="Slide 6"></button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION PLANETE / ECO -->
+  <section class="section section--planet">
+    <div class="section__container">
+      <div class="planet">
+        <div class="planet__image">
+          <img src="assets/img/Terre.png" alt="Terre">
+        </div>
+        <div class="planet__content">
+          <p class="planet__subtitle">Engagement écologique</p>
+          <h2 class="planet__title">Un festival pour la planète</h2>
+          <p class="planet__text">
+            SavouFest s'engage pour un événement éco-responsable. Gobelets réutilisables, 
+            tri sélectif, artistes locaux et transports en commun encouragés. 
+            <strong>Ensemble, faisons la fête tout en préservant notre belle planète ! 🌍</strong>
+          </p>
+          <a href="infos.html#eco" class="btn btn--primary">Nos engagements</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SECTION ICONES FLOTTANTES -->
+  <section class="section section--floating">
+    <div class="section__container">
+      <div class="section__header">
+        <p class="section__subtitle">Prêts pour l'aventure ?</p>
+        <h2 class="section__title">Rejoignez-nous en juin 2025</h2>
+      </div>
+
+      <div class="floating">
+        <!-- Icônes flottantes - Plus nombreuses -->
+        <div class="floating__decor floating__decor--1">
+          <img src="assets/img/Bouche.png" alt="">
+        </div>
+        <div class="floating__decor floating__decor--2">
+          <img src="assets/img/Couronne.png" alt="">
+        </div>
+        <div class="floating__decor floating__decor--3">
+          <img src="assets/img/éclair.png" alt="">
+        </div>
+        <div class="floating__decor floating__decor--4">
+          <img src="assets/img/mégaphone.png" alt="">
+        </div>
+        <div class="floating__decor floating__decor--5">
+          <img src="assets/img/Spider-sens.png" alt="">
+        </div>
+        <div class="floating__decor floating__decor--6">
+          <img src="assets/img/vinyle.png" alt="">
+        </div>
+        <!-- Nouvelles icônes -->
+        <div class="floating__decor floating__decor--7">
           <img src="assets/img/Terre.png" alt="">
         </div>
-      </div>
-    </section>
-
-    <section class="valeurs">
-      <div class="container">
-        <h2>Nos engagements</h2>
-        
-        <div class="grid-4">
-          <div class="card">
-            <span class="emoji">🌿</span>
-            <h3>Éco-responsable</h3>
-            <p>Énergies renouvelables, tri sélectif, gobelets réutilisables</p>
-          </div>
-
-          <div class="card">
-            <span class="emoji">🤝</span>
-            <h3>Accessible</h3>
-            <p>Accès PMR, tarifs réduits, espace calme</p>
-          </div>
-
-          <div class="card">
-            <span class="emoji">🎵</span>
-            <h3>Diversité musicale</h3>
-            <p>Rock, électro, hip-hop... tous les styles</p>
-          </div>
-
-          <div class="card">
-            <span class="emoji">🔥</span>
-            <h3>Convivialité</h3>
-            <p>Ambiance festive, food trucks locaux, animations</p>
-          </div>
+        <div class="floating__decor floating__decor--8">
+          <img src="assets/img/Bouche.png" alt="">
         </div>
-      </div>
-    </section>
-
-    <section class="liens-rapides">
-      <div class="container">
-        <h2>Explorer</h2>
-        
-        <div class="grid-4">
-          <a href="programme.html" class="link-card">
-            <span>🎵</span>
-            <h3>Programme</h3>
-            <p>Horaires complets</p>
-          </a>
-
-          <a href="artistes.html" class="link-card">
-            <span>👥</span>
-            <h3>Artistes</h3>
-            <p>La programmation</p>
-          </a>
-
-          <a href="scenes.html" class="link-card">
-            <span>🎤</span>
-            <h3>Scènes</h3>
-            <p>3 scènes</p>
-          </a>
-
-          <a href="infos.html" class="link-card">
-            <span>ℹ️</span>
-            <h3>Infos pratiques</h3>
-            <p>Tout savoir</p>
-          </a>
+        <div class="floating__decor floating__decor--9">
+          <img src="assets/img/éclair.png" alt="">
         </div>
-      </div>
-    </section>
-
-    <section class="chiffres">
-      <div class="container">
-        <div class="grid-4">
-          <div>
-            <span class="big-number">15+</span>
-            <span>Artistes</span>
-          </div>
-          <div>
-            <span class="big-number">3</span>
-            <span>Scènes</span>
-          </div>
-          <div>
-            <span class="big-number">2</span>
-            <span>Jours</span>
-          </div>
-          <div>
-            <span class="big-number">100%</span>
-            <span>Écolo</span>
-          </div>
+        <div class="floating__decor floating__decor--10">
+          <img src="assets/img/Couronne.png" alt="">
         </div>
-      </div>
-    </section>
-
-    <section class="newsletter">
-      <div class="container">
-        <h2>Restez informé</h2>
-        <p>Recevez toutes les actus du festival</p>
-        
-        <form>
-          <input type="email" placeholder="votre@email.com" required>
-          <button type="submit">S'inscrire</button>
-        </form>
-      </div>
-    </section>
-
-  </main>
-
-  <footer>
-    <div class="container">
-      <div class="footer-grid">
-        
-        <div>
-          <h3>SavouFest</h3>
-          <p>Le festival éco-responsable</p>
+        <div class="floating__decor floating__decor--11">
+          <img src="assets/img/vinyle.png" alt="">
+        </div>
+        <div class="floating__decor floating__decor--12">
+          <img src="assets/img/mégaphone.png" alt="">
         </div>
 
-        <div>
-          <h3>Liens</h3>
-          <ul>
-            <li><a href="festival.html">Le festival</a></li>
-            <li><a href="programme.html">Programme</a></li>
-            <li><a href="artistes.html">Artistes</a></li>
-            <li><a href="contact.html">Contact</a></li>
+        <div class="floating__cta">
+          <h3 class="floating__title">Ne ratez pas l'événement de l'année</h3>
+          <p class="floating__text">Billets en vente dès maintenant</p>
+          <a href="contact.html" class="btn btn--primary btn--large">Réserver ma place</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h3 class="footer__title">SavouFest</h3>
+          <p class="footer__text">
+            Le festival qui fait vibrer ! <br>
+            12-13 Juin 2025
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">f</a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">📷</a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">🐦</a>
+            <a href="#" class="footer__social-link" aria-label="TikTok">🎵</a>
+          </div>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Accueil</a></li>
+            <li><a href="festival.html" class="footer__link">Le festival</a></li>
+            <li><a href="programme.html" class="footer__link">Programme</a></li>
+            <li><a href="artistes.html" class="footer__link">Artistes</a></li>
           </ul>
         </div>
 
-        <div>
-          <h3>Contact</h3>
-          <p>contact@savoufest.fr</p>
+        <div class="footer__section">
+          <h3 class="footer__title">Infos pratiques</h3>
+          <ul class="footer__list">
+            <li><a href="scenes.html" class="footer__link">Scènes</a></li>
+            <li><a href="infos.html" class="footer__link">Infos & Accès</a></li>
+            <li><a href="contact.html" class="footer__link">Billetterie</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
         </div>
 
+        <div class="footer__section">
+          <h3 class="footer__title">Contact</h3>
+          <p class="footer__text">
+            📧 contact@savoufest.fr<br>
+            📞 01 23 45 67 89<br>
+            📍 Paris, France
+          </p>
+        </div>
       </div>
 
-      <p class="copyright">© 2025 SavouFest</p>
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2025 SavouFest. Tous droits réservés. | 
+          <a href="#" class="footer__link">Mentions légales</a> | 
+          <a href="#" class="footer__link">CGV</a>
+        </p>
+        <p class="footer__credits">
+          Design & Code avec ❤️ pour SAÉ 105
+        </p>
+      </div>
     </div>
   </footer>
-
-  <script src="src/js/script.js"></script>
 
 </body>
 </html>
