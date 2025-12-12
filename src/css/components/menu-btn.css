@@ -55,12 +55,6 @@
   transition: all 0.3s ease;
 }
 
-.menu__link:hover {
-  color: var(--color-accent-yellow);
-  text-decoration: none;
-  padding-left: var(--space-md);
-}
-
 .menu__link--active {
   color: var(--color-accent-yellow);
   font-weight: 700;
@@ -76,11 +70,7 @@
   padding: var(--space-md) var(--space-xl);
 }
 
-.menu__link--cta:hover {
-  background: var(--color-primary);
-  color: var(--color-accent-yellow);
-  padding-left: var(--space-xl);
-}
+
 
 /* Overlay */
 .menu-overlay {
@@ -174,17 +164,9 @@
     border-bottom: none;
   }
 
-  .menu__link:hover {
-    padding-left: var(--space-sm);
-  }
-
   .menu__link--cta {
     margin-top: 0;
     padding: var(--space-xs) var(--space-md);
-  }
-
-  .menu__link--cta:hover {
-    padding-left: var(--space-md);
   }
 
   .header__burger {

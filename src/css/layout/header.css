@@ -25,6 +25,7 @@ body {
   align-items: center;
   justify-content: space-between;
   position: relative;
+  flex-direction: row-reverse;
 }
 
 .header__logo-link {

@@ -12,11 +12,11 @@
 
   <header class="header">
     <div class="header__container">
-      <a href="menu.html" class="header__burger" aria-label="Menu">
+      <button class="header__burger" aria-label="Menu">
         <span class="header__burger-line"></span>
         <span class="header__burger-line"></span>
         <span class="header__burger-line"></span>
-      </a>
+      </button>
       
       <a href="index.html" class="header__logo-link">
         <img src="assets/img/Titre.png" alt="SavouFest" class="header__logo">
@@ -29,6 +29,20 @@
       </div>
     </div>
   </header>
+
+  <!-- MENU DÉROULANT -->
+  <nav class="menu">
+    <ul class="menu__list">
+      <li class="menu__item"><a href="index.html" class="menu__link">Accueil</a></li>
+      <li class="menu__item"><a href="festival.html" class="menu__link">Le festival</a></li>
+      <li class="menu__item"><a href="programme.html" class="menu__link">Programme</a></li>
+      <li class="menu__item"><a href="artistes.html" class="menu__link">Artistes</a></li>
+      <li class="menu__item"><a href="scenes.html" class="menu__link">Scènes</a></li>
+      <li class="menu__item"><a href="infos.html" class="menu__link">Infos</a></li>
+      <li class="menu__item"><a href="contact.html" class="menu__link menu__link--cta">Billetterie</a></li>
+    </ul>
+  </nav>
+  <div class="menu-overlay"></div>
 
   <main>
 
@@ -164,17 +178,6 @@
             📍 Paris, France
           </p>
         </div>
-      </div>
-
-      <div class="footer__bottom">
-        <p class="footer__copyright">
-          © 2025 SavouFest. Tous droits réservés. | 
-          <a href="#" class="footer__link">Mentions légales</a> | 
-          <a href="#" class="footer__link">CGV</a>
-        </p>
-        <p class="footer__credits">
-          Design & Code avec ❤️ pour SAÉ 105
-        </p>
       </div>
     </div>
   </footer>

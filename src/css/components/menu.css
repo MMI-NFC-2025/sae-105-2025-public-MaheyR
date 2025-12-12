@@ -1,18 +1,17 @@
 .menu {
   position: fixed;
   top: 0;
-  left: -320px;
-  width: 320px;
+  right: -300px;
+  width: 300px;
   height: 100vh;
-  background: linear-gradient(135deg, #000 0%, #333 100%);
+  background: #000;
   z-index: 500;
-  transition: left 0.3s ease;
-  overflow-y: auto;
+  transition: right 0.3s;
   padding-top: 80px;
 }
 
 .menu--open {
-  left: 0;
+  right: 0;
 }
 
 .menu__list {
@@ -30,41 +29,21 @@
 
 .menu__link {
   display: block;
-  padding: 15px 20px;
+  padding: 15px;
   font-size: 16px;
-  font-weight: 700;
-  text-transform: uppercase;
-  letter-spacing: 0.05em;
+  font-weight: 600;
   color: white;
   text-decoration: none;
   border-left: 3px solid transparent;
-  transition: all 0.3s ease;
-}
-
-.menu__link:hover {
-  border-left-color: #FF2D55;
-  padding-left: 25px;
-  color: #FF2D55;
-}
-
-.menu__link--active {
-  border-left-color: #FF2D55;
-  color: #FF2D55;
 }
 
 .menu__link--cta {
   background: #FF2D55;
   color: white;
   text-align: center;
-  border-radius: 8px;
+  border-radius: 5px;
   border: none;
   margin-top: 20px;
-  padding: 15px 20px;
-}
-
-.menu__link--cta:hover {
-  background: #d92650;
-  padding-left: 20px;
 }
 
 .menu-overlay {
@@ -73,11 +52,10 @@
   left: 0;
   width: 100%;
   height: 100vh;
-  background: rgba(0, 0, 0, 0.7);
+  background: rgba(0, 0, 0, 0.5);
   opacity: 0;
   visibility: hidden;
   z-index: 400;
-  transition: opacity 0.3s ease;
 }
 
 .menu-overlay--visible {
@@ -90,15 +68,6 @@ body.menu-open {
 }
 
 @media (min-width: 768px) {
-  .menu {
-    position: static;
-    width: auto;
-    height: auto;
-    background: transparent;
-    box-shadow: none;
-    overflow: visible;
-  }
-
   .menu__list {
     flex-direction: row;
     padding: 0;
@@ -118,19 +87,9 @@ body.menu-open {
     border-bottom: 2px solid transparent;
   }
 
-  .menu__link:hover {
-    padding-left: var(--space-xs);
-    border-bottom-color: var(--color-accent-red);
-    color: var(--color-primary);
-  }
-
   .menu__link--cta {
     margin-top: 0;
     padding: var(--space-sm) var(--space-lg);
-  }
-
-  .menu__link--cta:hover {
-    padding-left: var(--space-lg);
   }
 
   .menu-overlay {
