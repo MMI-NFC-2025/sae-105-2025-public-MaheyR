@@ -11,22 +11,22 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <a href="index.html">
-        <img src="assets/img/Titre.png" alt="SavouFest" class="logo">
+    <div class="header__container">
+      <a href="menu.html" class="header__burger" aria-label="Menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
       </a>
       
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="festival.html">Le festival</a></li>
-          <li><a href="programme.html">Programme</a></li>
-          <li><a href="artistes.html">Artistes</a></li>
-          <li><a href="scenes.html" class="nav__link--active">Scènes</a></li>
-          <li><a href="infos.html">Infos</a></li>
-          <li><a href="contact.html" class="btn-contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="index.html" class="header__logo-link">
+        <img src="assets/img/Titre.png" alt="SavouFest" class="header__logo">
+      </a>
+
+      <div class="header__decorations">
+        <img src="assets/img/éclair.png" alt="" class="header__deco-icon">
+        <img src="assets/img/Couronne.png" alt="" class="header__deco-icon">
+        <img src="assets/img/étoiles.png" alt="" class="header__deco-icon">
+      </div>
     </div>
   </header>
 
@@ -35,68 +35,109 @@
     <section class="stages-intro">
       <div class="container">
         <h1>Les scènes</h1>
-        
         <p>
-          Le SavouFest propose trois scènes uniques, chacune avec sa propre identité et son ambiance. 
-          Toutes sont installées au cœur de la réserve naturelle de la Basse Vallée de la Savoureuse, 
-          dans le respect de l'environnement. Découvrez ces espaces pensés pour offrir des expériences 
-          musicales variées et inoubliables.
+          Le SavouFest propose trois scènes uniques, chacune avec sa propre identité et son ambiance.
         </p>
       </div>
     </section>
 
-    <section class="section section--stages-list">
+    <section class="stage-list">
       <div class="container">
-        <h2>Les différentes scènes</h2>
-        
-        <ul class="stage-list">
-          <li class="stage-list__item">
-            <a href="scene.html" class="stage-card">
-              <img src="assets/img/Terre.png" alt="" class="stage-card__image">
-              <div class="stage-card__content">
-                <h3 class="stage-card__name">Scène Nature</h3>
-                <p class="stage-card__info">
-                  Au cœur de la réserve, cette scène offre une ambiance chill et apaisante. 
-                  Parfaite pour les musiques douces, l'électro chill et les sons organiques.
-                </p>
-              </div>
+        <ul class="stage-cards">
+          <li class="stage-card">
+            <a href="scene.html" class="stage-card__link">
+              <h3 class="stage-card__name">🌿 Scène Nature</h3>
+              <p class="stage-card__info">
+                Au cœur de la réserve, cette scène offre une ambiance chill et apaisante.
+              </p>
             </a>
           </li>
 
-          <li class="stage-list__item">
-            <a href="scene.html" class="stage-card">
-              <img src="assets/img/éclair.png" alt="" class="stage-card__image">
-              <div class="stage-card__content">
-                <h3 class="stage-card__name">Scène Éclair</h3>
-                <p class="stage-card__info">
-                  Énergie maximale et basses puissantes. Cette scène accueille les lives électro 
-                  et rock qui font vibrer le festival jusqu'au bout de la nuit.
-                </p>
-              </div>
+          <li class="stage-card">
+            <a href="scene.html" class="stage-card__link">
+              <h3 class="stage-card__name">⚡ Scène Éclair</h3>
+              <p class="stage-card__info">
+                Énergie maximale et basses puissantes pour des lives électro et rock.
+              </p>
             </a>
           </li>
 
-          <li class="stage-list__item">
-            <a href="scene.html" class="stage-card">
-              <img src="assets/img/mégaphone.png" alt="" class="stage-card__image">
-              <div class="stage-card__content">
-                <h3 class="stage-card__name">Scène Conscience</h3>
-                <p class="stage-card__info">
-                  Un espace intimiste pour les talks, performances engagées et lives acoustiques. 
-                  Ici, on écoute, on réfléchit, on partage.
-                </p>
-              </div>
+          <li class="stage-card">
+            <a href="scene.html" class="stage-card__link">
+              <h3 class="stage-card__name">📢 Scène Conscience</h3>
+              <p class="stage-card__info">
+                Un espace intimiste pour les talks et performances engagées.
+              </p>
             </a>
           </li>
         </ul>
       </div>
     </section>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h3 class="footer__title">SavouFest</h3>
+          <p class="footer__text">
+            Le festival qui fait vibrer ! <br>
+            12-13 Juin 2025
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img src="assets/img/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img src="assets/img/Insta.png" alt="Instagram">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <img src="assets/img/twitter.png" alt="Twitter">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Spotify">
+              <img src="assets/img/spotify.png" alt="Spotify">
+            </a>
+          </div>
+        </div>
 
-  </main>
+        <div class="footer__section">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Accueil</a></li>
+            <li><a href="festival.html" class="footer__link">Le festival</a></li>
+            <li><a href="programme.html" class="footer__link">Programme</a></li>
+            <li><a href="artistes.html" class="footer__link">Artistes</a></li>
+          </ul>
+        </div>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 SavouFest – Réserve naturelle de la Basse Vallée de la Savoureuse</p>
+        <div class="footer__section">
+          <h3 class="footer__title">Infos pratiques</h3>
+          <ul class="footer__list">
+            <li><a href="scenes.html" class="footer__link">Scènes</a></li>
+            <li><a href="infos.html" class="footer__link">Infos & Accès</a></li>
+            <li><a href="contact.html" class="footer__link">Billetterie</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Contact</h3>
+          <p class="footer__text">
+            📧 contact@savoufest.fr<br>
+            📞 01 23 45 67 89<br>
+            📍 Paris, France
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2025 SavouFest. Tous droits réservés. | 
+          <a href="#" class="footer__link">Mentions légales</a> | 
+          <a href="#" class="footer__link">CGV</a>
+        </p>
+        <p class="footer__credits">
+          Design & Code avec ❤️ pour SAÉ 105
+        </p>
+      </div>
     </div>
   </footer>
 

@@ -13,11 +13,11 @@
 
   <header class="header">
     <div class="header__container">
-      <button class="header__burger" aria-label="Menu" aria-expanded="false">
+      <a href="menu.html" class="header__burger" aria-label="Menu">
         <span class="header__burger-line"></span>
         <span class="header__burger-line"></span>
         <span class="header__burger-line"></span>
-      </button>
+      </a>
       
       <a href="index.html" class="header__logo-link">
         <img src="assets/img/Titre.png" alt="SavouFest" class="header__logo">
@@ -29,35 +29,7 @@
         <img src="assets/img/étoiles.png" alt="" class="header__deco-icon">
       </div>
     </div>
-    
-    <nav class="menu">
-      <ul class="menu__list">
-        <li class="menu__item">
-          <a href="index.html" class="menu__link">Accueil</a>
-        </li>
-        <li class="menu__item">
-          <a href="festival.html" class="menu__link">Le festival</a>
-        </li>
-        <li class="menu__item">
-          <a href="programme.html" class="menu__link menu__link--active">Programme</a>
-        </li>
-        <li class="menu__item">
-          <a href="artistes.html" class="menu__link">Artistes</a>
-        </li>
-        <li class="menu__item">
-          <a href="scenes.html" class="menu__link">Scènes</a>
-        </li>
-        <li class="menu__item">
-          <a href="infos.html" class="menu__link">Infos</a>
-        </li>
-        <li class="menu__item">
-          <a href="contact.html" class="menu__link menu__link--cta">Billetterie</a>
-        </li>
-      </ul>
-    </nav>
   </header>
-  
-  <div class="menu-overlay"></div>
 
   <main class="page">
 
@@ -227,24 +199,73 @@
   <footer class="footer">
     <div class="container">
       <div class="footer__content">
-        <div class="footer__logo">
-          <img src="assets/img/Titre.png" alt="SavouFest" class="footer__logo-img">
-        </div>
+        <div class="footer__logo"
+        <div class="footer__info">        
         
-        <div class="footer__info">
-          <p>12-13 Juin 2025</p>
-          <p>Réserve naturelle de la Basse Vallée de la Savoureuse</p>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h3 class="footer__title">SavouFest</h3>
+          <p class="footer__text">
+            Le festival qui fait vibrer ! <br>
+            12-13 Juin 2025
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img src="assets/img/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img src="assets/img/Insta.png" alt="Instagram">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <img src="assets/img/twitter.png" alt="Twitter">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Spotify">
+              <img src="assets/img/spotify.png" alt="Spotify">
+            </a>
+          </div>
         </div>
-        
-        <div class="footer__social">
-          <a href="#" class="footer__social-link">Instagram</a>
-          <a href="#" class="footer__social-link">Facebook</a>
-          <a href="#" class="footer__social-link">Twitter</a>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Accueil</a></li>
+            <li><a href="festival.html" class="footer__link">Le festival</a></li>
+            <li><a href="programme.html" class="footer__link">Programme</a></li>
+            <li><a href="artistes.html" class="footer__link">Artistes</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Infos pratiques</h3>
+          <ul class="footer__list">
+            <li><a href="scenes.html" class="footer__link">Scènes</a></li>
+            <li><a href="infos.html" class="footer__link">Infos & Accès</a></li>
+            <li><a href="contact.html" class="footer__link">Billetterie</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Contact</h3>
+          <p class="footer__text">
+            📧 contact@savoufest.fr<br>
+            📞 01 23 45 67 89<br>
+            📍 Paris, France
+          </p>
         </div>
       </div>
-      
+
       <div class="footer__bottom">
-        <p>© 2025 SavouFest - Tous droits réservés</p>
+        <p class="footer__copyright">
+          © 2025 SavouFest. Tous droits réservés. | 
+          <a href="#" class="footer__link">Mentions légales</a> | 
+          <a href="#" class="footer__link">CGV</a>
+        </p>
+        <p class="footer__credits">
+          Design & Code avec ❤️ pour SAÉ 105
+        </p>
       </div>
     </div>
   </footer>

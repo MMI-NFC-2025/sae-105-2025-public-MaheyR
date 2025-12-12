@@ -92,10 +92,14 @@
   height: 50px;
   background: rgba(255, 255, 255, 0.1);
   border-radius: 50%;
-  color: var(--color-surface);
-  font-size: var(--font-size-lg);
   transition: var(--transition-base);
   border: 2px solid transparent;
+}
+
+.footer__social-link img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
 }
 
 .footer__social-link:hover {

@@ -4,47 +4,31 @@ document.addEventListener('DOMContentLoaded', () => {
   // ============================================
   const burger = document.querySelector('.header__burger');
   const menu = document.querySelector('.menu');
-  const body = document.body;
+  const overlay = document.querySelector('.menu-overlay');
   
-  if (burger && menu) {
-    const overlay = document.createElement('div');
-    overlay.className = 'menu-overlay';
-    body.appendChild(overlay);
+  if (burger && menu && overlay) {
+    burger.addEventListener('click', function() {
+      menu.classList.toggle('menu--open');
+      burger.classList.toggle('header__burger--active');
+      overlay.classList.toggle('menu-overlay--visible');
+      document.body.classList.toggle('menu-open');
+    });
     
-    const toggleMenu = () => {
-      const isOpen = menu.classList.contains('menu--open');
-      
-      if (isOpen) {
+    overlay.addEventListener('click', function() {
+      menu.classList.remove('menu--open');
+      burger.classList.remove('header__burger--active');
+      overlay.classList.remove('menu-overlay--visible');
+      document.body.classList.remove('menu-open');
+    });
+    
+    const menuLinks = document.querySelectorAll('.menu__link');
+    menuLinks.forEach(function(link) {
+      link.addEventListener('click', function() {
         menu.classList.remove('menu--open');
         burger.classList.remove('header__burger--active');
         overlay.classList.remove('menu-overlay--visible');
-        burger.setAttribute('aria-expanded', 'false');
-        body.style.overflow = '';
-      } else {
-        menu.classList.add('menu--open');
-        burger.classList.add('header__burger--active');
-        overlay.classList.add('menu-overlay--visible');
-        burger.setAttribute('aria-expanded', 'true');
-        body.style.overflow = 'hidden';
-      }
-    };
-    
-    burger.addEventListener('click', toggleMenu);
-    overlay.addEventListener('click', toggleMenu);
-    
-    const menuLinks = document.querySelectorAll('.menu__link');
-    menuLinks.forEach(link => {
-      link.addEventListener('click', () => {
-        if (window.innerWidth < 768) {
-          toggleMenu();
-        }
+        document.body.classList.remove('menu-open');
       });
-    });
-    
-    document.addEventListener('keydown', (e) => {
-      if (e.key === 'Escape' && menu.classList.contains('menu--open')) {
-        toggleMenu();
-      }
     });
   }
 

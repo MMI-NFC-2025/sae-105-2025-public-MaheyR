@@ -11,72 +11,112 @@
 <body>
 
   <header class="header">
-    <div class="container">
-      <a href="index.html">
-        <img src="assets/img/Titre.png" alt="SavouFest" class="logo">
+    <div class="header__container">
+      <a href="menu.html" class="header__burger" aria-label="Menu">
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
+        <span class="header__burger-line"></span>
       </a>
       
-      <nav>
-        <ul class="menu">
-          <li><a href="index.html">Accueil</a></li>
-          <li><a href="festival.html">Le festival</a></li>
-          <li><a href="programme.html">Programme</a></li>
-          <li><a href="artistes.html">Artistes</a></li>
-          <li><a href="scenes.html" class="nav__link--active">Scènes</a></li>
-          <li><a href="infos.html">Infos</a></li>
-          <li><a href="contact.html" class="btn-contact">Contact</a></li>
-        </ul>
-      </nav>
+      <a href="index.html" class="header__logo-link">
+        <img src="assets/img/Titre.png" alt="SavouFest" class="header__logo">
+      </a>
+
+      <div class="header__decorations">
+        <img src="assets/img/éclair.png" alt="" class="header__deco-icon">
+        <img src="assets/img/Couronne.png" alt="" class="header__deco-icon">
+        <img src="assets/img/étoiles.png" alt="" class="header__deco-icon">
+      </div>
     </div>
   </header>
 
   <main>
 
-    <article class="stage-detail">
+    <div class="stage-detail">
       <div class="container">
 
-        <header class="stage-detail__header">
-          <img src="assets/img/Terre.png" alt="Scène Nature" class="stage-detail__image">
-          <h1 class="stage-detail__name">Scène Nature</h1>
-          <p class="stage-detail__meta">Au cœur de la Réserve naturelle de la Basse Vallée de la Savoureuse</p>
-        </header>
+        <h1 class="stage-detail__title">🌿 Scène Nature</h1>
+        
+        <p class="stage-detail__description">
+          La Scène Nature est nichée au cœur de la réserve, entourée de verdure. 
+          Elle accueille une programmation chill, électro et indie en harmonie avec la nature.
+        </p>
 
-        <section class="stage-detail__section">
-          <h2 class="stage-detail__title">Description</h2>
-          <p>
-            La Scène Nature est nichée au cœur de la réserve, entourée de verdure et baignée d'une lumière douce. 
-            Avec un volume modéré et une ambiance apaisante, elle accueille une programmation chill, électro et indie. 
-            Sa scénographie sobre et éco-responsable respecte la faune et la flore environnantes, offrant une expérience 
-            musicale en harmonie totale avec la nature.
-          </p>
-        </section>
-
-        <section class="stage-detail__section stage-detail__section--artists">
-          <h2 class="stage-detail__title">Artistes sur cette scène</h2>
-          <ul class="stage-artists">
-            <li class="stage-artists__item">
-              <a href="artiste.html" class="stage-artists__link">
-                Eco Beats – 12 juin • 18h
-              </a>
-            </li>
-            <li class="stage-artists__item">
-              <a href="artiste.html" class="stage-artists__link">
-                Earth Groove – 13 juin • 18h
-              </a>
-            </li>
-          </ul>
-        </section>
+        <h2 class="stage-detail__subtitle">Artistes</h2>
+        <ul class="stage-detail__artists">
+          <li><a href="artiste.html">Eco Beats – 12 juin • 18h</a></li>
+          <li><a href="artiste.html">Earth Groove – 13 juin • 18h</a></li>
+        </ul>
 
         <a href="scenes.html" class="stage-detail__back">← Retour aux scènes</a>
 
       </div>
-    </article>
+    </div>
+  <footer class="footer">
+    <div class="footer__container">
+      <div class="footer__grid">
+        <div class="footer__section">
+          <h3 class="footer__title">SavouFest</h3>
+          <p class="footer__text">
+            Le festival qui fait vibrer ! <br>
+            12-13 Juin 2025
+          </p>
+          <div class="footer__social">
+            <a href="#" class="footer__social-link" aria-label="Facebook">
+              <img src="assets/img/facebook.png" alt="Facebook">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Instagram">
+              <img src="assets/img/Insta.png" alt="Instagram">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Twitter">
+              <img src="assets/img/twitter.png" alt="Twitter">
+            </a>
+            <a href="#" class="footer__social-link" aria-label="Spotify">
+              <img src="assets/img/spotify.png" alt="Spotify">
+            </a>
+          </div>
+        </div>
 
-  </main>
+        <div class="footer__section">
+          <h3 class="footer__title">Navigation</h3>
+          <ul class="footer__list">
+            <li><a href="index.html" class="footer__link">Accueil</a></li>
+            <li><a href="festival.html" class="footer__link">Le festival</a></li>
+            <li><a href="programme.html" class="footer__link">Programme</a></li>
+            <li><a href="artistes.html" class="footer__link">Artistes</a></li>
+          </ul>
+        </div>
 
-  <footer>
-    <div class="container">
-      <p>© 2025 SavouFest – Réserve naturelle de la Basse Vallée de la Savoureuse</p>
+        <div class="footer__section">
+          <h3 class="footer__title">Infos pratiques</h3>
+          <ul class="footer__list">
+            <li><a href="scenes.html" class="footer__link">Scènes</a></li>
+            <li><a href="infos.html" class="footer__link">Infos & Accès</a></li>
+            <li><a href="contact.html" class="footer__link">Billetterie</a></li>
+            <li><a href="#" class="footer__link">FAQ</a></li>
+          </ul>
+        </div>
+
+        <div class="footer__section">
+          <h3 class="footer__title">Contact</h3>
+          <p class="footer__text">
+            📧 contact@savoufest.fr<br>
+            📞 01 23 45 67 89<br>
+            📍 Paris, France
+          </p>
+        </div>
+      </div>
+
+      <div class="footer__bottom">
+        <p class="footer__copyright">
+          © 2025 SavouFest. Tous droits réservés. | 
+          <a href="#" class="footer__link">Mentions légales</a> | 
+          <a href="#" class="footer__link">CGV</a>
+        </p>
+        <p class="footer__credits">
+          Design & Code avec ❤️ pour SAÉ 105
+        </p>
+      </div>
     </div>
   </footer>
 
